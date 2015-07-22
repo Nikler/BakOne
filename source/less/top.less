@@ -1,0 +1,53 @@
+.top {
+	.wrapper();
+	&:after {
+		.clearfix();
+	}
+}
+.logo {
+	padding-left: 60px;
+	float: left;
+	color: @color;	
+	height: 95px;
+	position: relative;
+	&__title {
+		margin: 35px 0 0;
+		font-size: 2rem;
+		line-height: 1;
+		font-family: LatoBold;
+		text-transform: uppercase;
+	}
+	&__desc {
+		font-size: 1.4rem;
+	}
+	&:before {
+		content: "";
+		display: block;
+		width: 49px;
+		height: 47px;
+		position: absolute;
+		background: url("../img/logo.png") no-repeat 0 0;
+		top: 25px;
+		left: 0;
+	}
+}
+.nav {
+	float: right;
+	&__item {
+		display: inline-block;
+		text-align: center;
+		margin-top: 30px;
+	}
+	&__link {
+		display: inline-block;
+		padding: 12px 0;
+		width: 100px;
+		font-size: @but-size;
+		color: @color;
+		text-transform: uppercase;
+		&:hover {
+			background: @but-color;
+			color: #fff;
+		};
+	}
+}

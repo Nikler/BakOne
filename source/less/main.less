@@ -1,0 +1,34 @@
+.but {
+	display: inline-block;
+	padding: 12px;
+	color: #fff;
+	background: @but-color;
+	font-size: @but-size;
+	line-height: 1;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	&:hover {
+		background: @but-active;
+	}
+	&--active {
+		background: @but-active;
+		&:hover {
+			background: @but-active;
+		}
+	}
+}
+body {
+	font-family: LatoRegular;
+}
+
+/*----------------Mixins---------------*/
+
+.wrapper() {
+	margin: 0 auto;
+	width: 940px;
+}
+.clearfix() {
+	display: table;
+	clear: both;
+	content: "";
+}

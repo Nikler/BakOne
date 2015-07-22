@@ -1,0 +1,366 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain) */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+html {
+  font-size: 10px;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a {
+  text-decoration: none;
+}
+@font-face {
+  font-family: 'LatoRegular';
+  src: url('../fonts/LatoRegular/LatoRegular.eot');
+  src: url('../fonts/LatoRegular/LatoRegular.eot?#iefix') format('embedded-opentype'), url('../fonts/LatoRegular/LatoRegular.woff') format('woff'), url('../fonts/LatoRegular/LatoRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'LatoBold';
+  src: url('../fonts/LatoBold/LatoBold.eot');
+  src: url('../fonts/LatoBold/LatoBold.eot?#iefix') format('embedded-opentype'), url('../fonts/LatoBold/LatoBold.woff') format('woff'), url('../fonts/LatoBold/LatoBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.but {
+  display: inline-block;
+  padding: 12px;
+  color: #fff;
+  background: #1bbc9b;
+  font-size: 1.3rem;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.but:hover {
+  background: #16a086;
+}
+.but--active {
+  background: #16a086;
+}
+.but--active:hover {
+  background: #16a086;
+}
+body {
+  font-family: LatoRegular;
+}
+/*----------------Mixins---------------*/
+.top {
+  margin: 0 auto;
+  width: 940px;
+}
+.top:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+.logo {
+  padding-left: 60px;
+  float: left;
+  color: #444444;
+  height: 95px;
+  position: relative;
+}
+.logo__title {
+  margin: 35px 0 0;
+  font-size: 2rem;
+  line-height: 1;
+  font-family: LatoBold;
+  text-transform: uppercase;
+}
+.logo__desc {
+  font-size: 1.4rem;
+}
+.logo:before {
+  content: "";
+  display: block;
+  width: 49px;
+  height: 47px;
+  position: absolute;
+  background: url("../img/logo.png") no-repeat 0 0;
+  top: 25px;
+  left: 0;
+}
+.nav {
+  float: right;
+}
+.nav__item {
+  display: inline-block;
+  text-align: center;
+  margin-top: 30px;
+}
+.nav__link {
+  display: inline-block;
+  padding: 12px 0;
+  width: 100px;
+  font-size: 1.3rem;
+  color: #444444;
+  text-transform: uppercase;
+}
+.nav__link:hover {
+  background: #1bbc9b;
+  color: #fff;
+}
+.banner {
+  color: #fff;
+  text-align: center;
+  background: url("../img/banner-bg.png") no-repeat 0 0;
+  background-size: cover;
+  height: 453px;
+}
+.banner:before {
+  display: table;
+  clear: both;
+  content: "";
+}
+.banner__title {
+  font-size: 5.5rem;
+  margin: 90px 0 45px;
+  line-height: 1;
+}
+.banner__title b {
+  font-family: LatoBold;
+}
+.banner__desc {
+  display: inline-block;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  margin-bottom: 45px;
+  width: 620px;
+}
+.but-down {
+  font-size: 50px;
+  color: #fff;
+  display: inline-block;
+  margin-top: 45px;
+}
+.but-down:hover {
+  color: #1bbc9b;
+}
+.portfolio {
+  margin: 0 auto;
+  width: 940px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.portfolio__title {
+  font-size: 2.8rem;
+  color: #444444;
+  margin: 25px 0 20px;
+}
+.portfolio__desc {
+  font-size: 1.6rem;
+  color: #444444;
+  margin: 0 0 35px;
+}
+.works__control a {
+  margin-left: 14px;
+}
+.works__control a:first-child {
+  margin-left: 0;
+}
+.works__list {
+  margin: 30px auto 0;
+  width: 920px;
+}
+.works__list:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+.works__item {
+  display: block;
+  float: left;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: #00a99d;
+  margin: 17px 25px;
+}
+.works__item-hover {
+  display: none;
+  border-radius: 50%;
+  background: rgba(22, 160, 134, 0.75);
+  height: 100%;
+}
+.works__item:hover .works__item-hover {
+  display: block;
+}
+.works__item-icon {
+  display: inline-block;
+  margin-top: 30px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: rgba(68, 68, 68, 0.61);
+  text-align: center;
+}
+.works__item-icon i {
+  font-size: 2.1rem;
+  color: #fff;
+  margin-top: 12px;
+}
+.works__item:first-child {
+  background: url("../img/work1.png") no-repeat 50% 50%;
+  background-size: cover;
+}
+.works__item:nth-child(2) {
+  background: url("../img/work2.png") no-repeat 50% 50%;
+  background-size: cover;
+}
+.works__item:nth-child(3) {
+  background: url("../img/work3.png") no-repeat 50% 50%;
+  background-size: cover;
+}
+.works__item:nth-child(4) {
+  background: url("../img/work4.png") no-repeat 50% 50%;
+  background-size: cover;
+}
+.works__item:nth-child(5) {
+  background: url("../img/work5.png") no-repeat 50% 50%;
+  background-size: cover;
+}
+.works__item:nth-child(6) {
+  background: url("../img/work6.png") no-repeat 50% 50%;
+  background-size: cover;
+}
+.works__item:nth-child(7) {
+  background: url("../img/work7.png") no-repeat 50% 50%;
+  background-size: cover;
+}
+.works__item:last-child {
+  background: url("../img/work8.png") no-repeat 50% 50%;
+  background-size: cover;
+}
+.works__item-title {
+  font-size: 1.8rem;
+  color: #fff;
+  margin: 20px 0 10px;
+}
+.works__item-desc {
+  font-size: 1.4rem;
+  color: #fff;
+}
