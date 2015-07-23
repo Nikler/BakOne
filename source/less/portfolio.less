@@ -16,8 +16,10 @@
 }
 .works {
 	&__control {
-		& a {
+		& button {
 			margin-left: 14px;
+			border: none;
+			cursor: pointer;
 			&:first-child {
 				margin-left: 0;
 			}
@@ -39,13 +41,23 @@
 		background: #00a99d;
 		margin: 17px 25px;
 		&-hover {
-			display: none;
+			display: block;
 			border-radius: 50%;
 			background: rgba(22, 160, 134, .75);
 			height: 100%;
+			width: 0;
+			height: 0;
+			margin-top: 50%;
+			margin-left: 50%;
+			overflow: hidden;
+			transition: all 0.2s ease-in-out;
 		}
 		&:hover .works__item-hover {
 			display: block;
+			width: 180px;
+			height: 180px;
+			margin-top: 0;
+			margin-left: 0;
 		}
 		&-icon {
 			display: inline-block;
@@ -61,35 +73,35 @@
 				margin-top: 12px;			
 			}
 		}
-		&:first-child {
+		&--1 {
 			background: url("../img/work1.png") no-repeat 50% 50%;
 			background-size: cover;
 		}
-		&:nth-child(2) {
+		&--2 {
 			background: url("../img/work2.png") no-repeat 50% 50%;
 			background-size: cover;
 		}
-		&:nth-child(3) {
+		&--3 {
 			background: url("../img/work3.png") no-repeat 50% 50%;
 			background-size: cover;
 		}
-		&:nth-child(4) {
+		&--4 {
 			background: url("../img/work4.png") no-repeat 50% 50%;
 			background-size: cover;
 		}
-		&:nth-child(5) {
+		&--5 {
 			background: url("../img/work5.png") no-repeat 50% 50%;
 			background-size: cover;
 		}
-		&:nth-child(6) {
+		&--6 {
 			background: url("../img/work6.png") no-repeat 50% 50%;
 			background-size: cover;
 		}
-		&:nth-child(7) {
+		&--7 {
 			background: url("../img/work7.png") no-repeat 50% 50%;
 			background-size: cover;
 		}
-		&:last-child {
+		&--8 {
 			background: url("../img/work8.png") no-repeat 50% 50%;
 			background-size: cover;
 		}

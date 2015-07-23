@@ -1,0 +1,115 @@
+.contact {
+	&:before, &:after{
+		.clearfix()
+	}
+	background: #ecf0f1;
+	text-align:center;
+	padding-bottom: 60px;
+	&__title {
+		font-size: 2.8rem;
+		color: @color;
+		margin: 60px 0 10px;
+	}
+	&__desc {
+		font-size: 1.4rem;
+		color: @color;
+		margin:0 0 35px;
+	}
+	&__wrap {
+		width: 940px;
+		margin: 0 auto;
+		&:before, &:after{
+		.clearfix()
+		}
+	}
+}
+.form {
+	width: 470px;
+	float: left;
+	text-align: right;
+	box-sizing: border-box;
+	padding-right: 10px;
+	&__name {
+		width: 220px;
+		height: 45px;
+		border: 2px solid #bec3c7;
+		padding: 15px 10px;
+		box-sizing: border-box;
+		margin-right: 15px;
+		&::-webkit-input-placeholder {
+			.placeholder()
+		}
+		&::-moz-placeholder {
+			.placeholder();
+		}
+		&:-ms-input-placeholder {
+			.placeholder();	
+	}
+	}
+	&__email {
+		width: 220px;
+		height: 45px;
+		border: 2px solid #bec3c7;
+		padding: 15px 10px;
+		box-sizing: border-box;
+		&::-webkit-input-placeholder {
+			.placeholder()
+		}
+		&::-moz-placeholder {
+			.placeholder();
+		}
+		&:-ms-input-placeholder {
+			.placeholder();	
+	}
+	}
+	&__message {
+		width: 458px;
+		height: 150px;
+		border: 2px solid #bec3c7;
+		padding: 15px 10px;
+		margin: 20px 0;
+		resize: none;
+		box-sizing: border-box;
+		&::-webkit-input-placeholder {
+			.placeholder();
+		}
+		&::-moz-placeholder {
+			.placeholder();
+		}
+		&:-ms-input-placeholder {
+			.placeholder();	
+		}
+	}	
+
+}
+.info {
+	width: 470px;
+	float: left;
+	text-align: left;
+	box-sizing: border-box;
+	padding-left: 10px;
+	color: @color;
+	&__title {
+		font-size: 1.4rem;
+		text-transform: uppercase;
+	}
+	&__location {
+		font-size: 1.4rem;
+		line-height: 2.4rem;
+		margin: 14px 0;
+	}
+	&__phone {
+		font-size: 1.4rem;
+		line-height: 2.4rem;
+	}
+	&__fax {
+		font-size: 1.4rem;
+		line-height: 2.4rem;
+		text-transform: uppercase;
+		margin: 8px 0;
+	}
+	&__email {
+		font-size: 1.4rem;
+		line-height: 2.4rem;
+	}
+}

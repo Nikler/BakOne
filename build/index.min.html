@@ -20,14 +20,14 @@
 
 <div class="top">
 	<div class="logo">
-		<div class="logo__title">bak-one</div>
+		<div class="logo__title" id="logo">bak-one</div>
 		<div class="logo__desc">One Page Flat Temple</div>
 	</div>
 	<ul class="nav">
 		<li class="nav__item"><a href="#" class="nav__link">home</a></li>
-		<li class="nav__item"><a href="#" class="nav__link">portfolio</a></li>
-		<li class="nav__item"><a href="#" class="nav__link">about</a></li>
-		<li class="nav__item"><a href="#" class="nav__link">contact</a></li>
+		<li class="nav__item"><a href="#portfolio" class="nav__link scroll">portfolio</a></li>
+		<li class="nav__item"><a href="#about" class="nav__link scroll">about</a></li>
+		<li class="nav__item"><a href="#contact" class="nav__link scroll">contact</a></li>
 	</ul>
 </div>
 
@@ -40,7 +40,7 @@
 	<p class="banner__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
 nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p><br>
 	<a href="#" class="but">learn more</a><br>
-	<a href="#"><i class="fa fa-chevron-circle-down but-down"></i></a>
+	<a href="#portfolio" class="scroll"><i class="fa fa-chevron-circle-down but-down"></i></a>
 </div>
 
 
@@ -48,17 +48,17 @@ nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p><br>
 
 
 <div class="portfolio">
-	<h2 class="portfolio__title">Portfolio</h2>
+	<h2 class="portfolio__title" id="portfolio">Portfolio</h2>
 	<p class="portfolio__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
 	<div class="works">
 		<div class="works__control">
-			<a class="but but--active" href="#">All</a>
-			<a class="but" href="#">web design</a>
-			<a class="but" href="#">graphic design</a>
-			<a class="but" href="#">flat design</a>
+			<button class="but but--active" href="#">All</button>
+			<button class="but" href="#">web design</button>
+			<button class="but" href="#">graphic design</button>
+			<button class="but" href="#">flat design</button>
 		</div>
 		<div class="works__list">
-			<div class="works__item">
+			<div class="works__item works__item--1">
 				<div class="works__item-hover">
 					<div class="works__item-icon">
 						<i class="fa fa-search"></i>
@@ -67,7 +67,7 @@ nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p><br>
 					<div class="works__item-desc">Web Design</div>
 				</div>
 			</div>
-			<div class="works__item">
+			<div class="works__item works__item--2">
 				<div class="works__item-hover">
 					<div class="works__item-icon">
 						<i class="fa fa-search"></i>
@@ -76,7 +76,7 @@ nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p><br>
 					<div class="works__item-desc">Web Design</div>
 				</div>
 			</div>
-			<div class="works__item">
+			<div class="works__item works__item--3">
 				<div class="works__item-hover">
 					<div class="works__item-icon">
 						<i class="fa fa-search"></i>
@@ -85,7 +85,7 @@ nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p><br>
 					<div class="works__item-desc">Web Design</div>
 				</div>
 			</div>
-			<div class="works__item">
+			<div class="works__item works__item--4">
 				<div class="works__item-hover">
 					<div class="works__item-icon">
 						<i class="fa fa-search"></i>
@@ -94,7 +94,7 @@ nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p><br>
 					<div class="works__item-desc">Web Design</div>
 				</div>
 			</div>
-			<div class="works__item">
+			<div class="works__item works__item--5">
 				<div class="works__item-hover">
 					<div class="works__item-icon">
 						<i class="fa fa-search"></i>
@@ -103,7 +103,7 @@ nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p><br>
 					<div class="works__item-desc">Web Design</div>
 				</div>
 			</div>
-			<div class="works__item">
+			<div class="works__item works__item--6">
 				<div class="works__item-hover">
 					<div class="works__item-icon">
 						<i class="fa fa-search"></i>
@@ -112,7 +112,7 @@ nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p><br>
 					<div class="works__item-desc">Web Design</div>
 				</div>
 			</div>
-			<div class="works__item">
+			<div class="works__item works__item--7">
 				<div class="works__item-hover">
 					<div class="works__item-icon">
 						<i class="fa fa-search"></i>
@@ -121,7 +121,7 @@ nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p><br>
 					<div class="works__item-desc">Web Design</div>
 				</div>
 			</div>
-			<div class="works__item">
+			<div class="works__item works__item--8">
 				<div class="works__item-hover">
 					<div class="works__item-icon">
 						<i class="fa fa-search"></i>
@@ -139,7 +139,7 @@ nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p><br>
 
 
 <div class="team">
-	<h2 class="team__title">About Us</h2>
+	<h2 class="team__title" id="about">About Us</h2>
 	<p class="team__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
 	<div class="experts">
 		<div class="experts__item experts__item--expert1">
@@ -198,7 +198,58 @@ nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p><br>
 
 
 
-<script src="js/jquery.min.js"></script>
-<script src="js/main.min.js"></script>
+
+
+<div class="contact">
+	<h2 class="contact__title" id="contact">Contact Us</h2>
+	<p class="contact__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+	<div class="contact__wrap">
+		<form class="form">
+			<input class="form__name" type="text" name="name" placeholder="Your name">
+			<input class="form__email" type="email" name="email" placeholder="Your email">
+			<textarea class="form__message" name="message" placeholder="Your message"></textarea>
+			<button class="but but--form" value="submit">Submit</button>
+		</form>
+		<div class="info">
+			<div class="info__title">INFORMATION</div>
+			<div class="info__location"><i class="fa fa-map-marker"></i>	
+				Bak-One Company<br>
+   	 			12345 Hollywood Bvld Street<br>
+     			Los Angeles, California		
+     		</div>
+			<div class="info__phone">
+			<i class="fa fa-phone-square"></i>
+			+444 (Phone) 123456
+			</div>
+			<div class="info__fax">
+			<i class="fa fa-print"></i>
+			+123 (FAX) 0011223
+			</div>
+			<div class="info__email">
+			<i class="fa fa-envelope-o"></i>
+			info@bak-onecompany.com
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+<div class="footer">
+	<div class="footer__wrap">
+		<div class="footer__copy">© Copyright 2013 Bak-One  |  One Page Flat Template</div>
+		<a href="#logo" class="but but--footer scroll">
+		<i class="fa fa-chevron-up"></i>
+		</a>
+	</div>
+</div>
+
+
+
+<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="js/jquery.scrollTo-1.4.3.1.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

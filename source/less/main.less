@@ -7,8 +7,11 @@
 	line-height: 1;
 	text-transform: uppercase;
 	letter-spacing: 1px;
+	-webkit-transition: background-color 0.5s;
+  	transition: background-color 0.5s;
 	&:hover {
 		background: @but-active;
+
 	}
 	&--active {
 		background: @but-active;
@@ -16,10 +19,27 @@
 			background: @but-active;
 		}
 	}
+	&--form {
+		border: none;
+		cursor: pointer;
+		padding: 13px 30px 11px;
+	}
+	&--footer {
+		float: right;
+		margin-top: 22px;
+		height: 35px;
+		width: 45px;
+		padding: 10px 0 0 0;
+		text-align: center;
+		& i {
+			font-size: 2rem;
+		}
+	}
 }
 body {
 	font-family: LatoRegular;
 }
+
 
 /*----------------Mixins---------------*/
 
@@ -32,3 +52,10 @@ body {
 	clear: both;
 	content: "";
 }
+.placeholder() {
+	font-size: 1.4rem;
+	color: #999;
+	font-style: italic;
+	font-family: LatoRegular;
+}
+

@@ -28,14 +28,17 @@
 		margin: 0 30px;
 		background: #fff;
 		padding-top: 240px;
+		overflow: hidden;
 		&-hover {
-			display: none;
+			display: block;
 			position: absolute;
 			top: 95px;
-			left: 20px;
+			left: -220px;
+			transition: all 0.3s ease-in-out;
 		}
 		&:hover .experts__item-hover {
-			display: block;
+			top: 95px;
+			left: 20px;
 		}
 		&--expert1 {
 			background: url("../img/expert1.jpg") no-repeat #fff;
@@ -76,8 +79,10 @@
 			font-size: 2.9rem;
 			color: #fff;
 			margin: 11px 9px 0;
+			transition: all 0.1s ease-in-out;
 			&:hover {
 				color: @color;
+				transform: scale(1.2);
 			}
 		}
 	}
