@@ -108,6 +108,7 @@ html {
 }
 body {
   line-height: 1;
+  min-width: 980px;
 }
 ol,
 ul {
